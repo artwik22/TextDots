@@ -1,0 +1,93 @@
+* {
+all: unset;
+font-weight: 500;
+font-family: 'JetBrainsMono Nerd Font', 'Font Awesome 6 Free', 'FiraCode';
+}
+
+/* Tło całego paska */
+#waybar {
+font-size: 16px;
+background-color: rgba(1, 1, 1, 0.8); /* ciemny szary, 50% */
+box-shadow: none;
+}
+
+/* Moduły */
+#workspaces,
+#pulseaudio,
+#pulseaudio-slider,
+#custom-theme-switcher,
+#custom-cava,
+#clock {
+padding: 2px 15px;
+color: #e0e0e0;
+background: transparent; /* moduły przejmują tło od #waybar */
+border-radius: 0px;
+border: solid 0px #555555;
+opacity: 1;
+margin: 0px;
+}
+
+#workspaces,
+#custom-theme-switcher,
+#pulseaudio {
+font-size: 24px;
+}
+
+#workspaces {
+padding-left: 13px;
+}
+
+#workspaces button {
+margin-left: 4px;
+margin-right: 4px;
+color: #b0b0b0;
+}
+
+#workspaces button.active {
+color: #ffffff;
+}
+
+#clock {
+padding-top: 4px;
+}
+
+#pulseaudio {
+min-width: 20px;
+}
+
+#pulseaudio-slider slider {
+min-height: 0px;
+min-width: 0px;
+box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+min-height: 10px;
+min-width: 80px;
+border-radius: 0px;
+background-color: #777777;
+}
+
+#pulseaudio-slider highlight {
+min-width: 10px;
+border-radius: 0px;
+background-color: #ffffff;
+}
+
+#custom-theme-switcher {
+color: #ffffff;
+padding-left: 11px;
+}
+
+#custom-cava {
+color: #ffffff;
+}
+#custom-cava:hover {
+color: #cccccc;
+}
+
+#custom-theme-switcher:hover,
+#pulseaudio:hover,
+#custom-skrypt:hover {
+color: #cccccc;
+}
